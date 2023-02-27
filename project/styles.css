@@ -1,0 +1,191 @@
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* setting properties*/
+
+:root {
+
+    /* colors */
+    --clr-primary: hsl(179, 62%, 43%);
+    --clr-seconday: hsl(71, 73%, 54%);
+    --clr-netural-primary: hsl(204, 43%, 93%);
+    --clr-netural-Secondary: hsl(218, 22%, 67%);
+
+    /* fonts */
+    --ff: 'Karla', sans-serif;
+}
+
+/* mobile */
+
+.grid-container{
+    font-family: var(--ff);
+}
+
+/* container-1 */
+.container-1{
+    padding: 40px 30px;
+}
+
+.container-1-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--clr-primary);
+}
+
+.container-1-title-2{
+    color: var(--clr-seconday);
+    padding: 20px 0;
+    width: 80%;
+}
+
+.container-1-details{
+    color: var(--clr-netural-Secondary);
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/* contaoner-2 */
+
+.container-2{
+    padding: 30px 30px;
+    background-color: var(--clr-primary);
+}
+
+.container-2-title{
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+
+.container-2-price-tag{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 20px;
+}
+
+.price{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tag{
+    font-size: 16px;
+    color: var(--clr-netural-primary);
+    font-weight: lighter;
+}
+
+.container-2-details{
+    color: white;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+a,.container-2-btn {
+    text-decoration: none;
+}
+
+.container-2-btn{
+    padding: 15px 50px;
+    text-align: center;
+    background-color: var(--clr-seconday);
+    color: white;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* container-3 */
+.container-3{
+    background-color: var(--clr-primary);
+    opacity: 80%;
+    padding: 20px 30px 30px 30px;
+}
+.container-3-title{
+    font-size: large;
+    color: white;
+}
+
+.container-3-list{
+    margin-top: 20px;
+}
+
+.container-3-list li{
+    list-style: none;
+    font-size: 14px;
+    color: white;
+    opacity: 60%;
+    line-height: 20px;
+}
+
+@media (min-width:800px) and (max-width:1980px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* container-1 */
+
+    .container-1{
+        padding: 100px;
+        grid-column:span 2;
+    }
+
+    .container-1-title{
+        font-size: xx-large;
+    }
+
+    .container-1-title-2{
+        font-size: larger;
+    }
+
+    .container-1-details{
+        font-size: larger;
+    }
+
+    /* container-2 */
+
+    .container-2{
+        padding: 100px;
+    }
+
+    .container-2-title{
+        font-size: xx-large;
+    }
+
+    .price{
+        font-size: 40px;
+    }
+
+    .tag{
+        font-size: 20px;
+    }
+
+    .container-2-details{
+        font-size: 20px;
+    }
+
+    .container-2-btn{
+        width: 50%;
+        font-size: larger;
+        margin-top: 100px;
+    }
+
+    /* container-3 */
+
+    .container-3{
+        padding: 100px;
+    }
+
+    .container-3-title{
+        font-size: xx-large;
+    }
+
+    .container-3-list li{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
